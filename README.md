@@ -10,4 +10,4 @@
 
 Произведена настройка инструмента GitHub Actions для этого репозитория.
 
-
+[![Android CI](https://github.com/YuriKopshev/UIAutomator/actions/workflows/main.yml/badge.svg)](https://github.com/YuriKopshev/UIAutomator/actions/workflows/main.yml)

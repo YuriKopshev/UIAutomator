@@ -53,14 +53,14 @@ class ChangeTextTest {
         ).click()
     }
 
-    @Test
-    fun testAboutEmulatedDeviceSettings() {
-        waitForPackage(SETTINGS_PACKAGE)
-
-        device.findObject(
-            UiSelector().resourceId("android:id/title").instance(14)
-        ).click()
-    }
+//    @Test
+//    fun testAboutEmulatedDeviceSettings() {
+//        waitForPackage(SETTINGS_PACKAGE)
+//
+//        device.findObject(
+//            UiSelector().resourceId("android:id/title").instance(14)
+//        ).click()
+//    }
 
     @Test
     fun testChangeText() {

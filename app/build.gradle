@@ -37,6 +37,13 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE.md'
         exclude 'META-INF/LICENSE-notice.md'
+        exclude 'META-INF/spring.tooling'
+        exclude 'META-INF/versions/9'
+        exclude 'META-INF/spring.handlers'
+        exclude 'META-INF/license.txt'
+        exclude "META-INF/DEPENDENCIES"
+        exclude 'META-INF/spring.schemas'
+        exclude 'META-INF/notice.txt'
     }
 }
 
@@ -72,4 +79,14 @@ dependencies {
     androidTestImplementation "androidx.test.uiautomator:uiautomator:$uiautomator_version"
     androidTestImplementation "org.hamcrest:hamcrest-integration:$hamcrest_version"
     androidTestImplementation 'io.appium:java-client:7.6.0'
+//        exclude group: 'commons-logging', module: 'commons-logging'
+//        exclude group: 'org.seleniumhq.selenium', module: 'selenium-api'
+//    }
+
+    implementation ('io.appium:java-client:7.6.0'){
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-api'
+    }
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.2.0'
+    implementation 'com.google.guava:guava:27.0.1-android'
 }

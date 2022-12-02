@@ -17,6 +17,7 @@ import java.net.URL;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class AppiumChangeTextTest {
@@ -28,7 +29,8 @@ public class AppiumChangeTextTest {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("appium:deviceName", "Samsung");
+        //desiredCapabilities.setCapability("appium:deviceName", "Samsung");
+        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 6 API 30");
         desiredCapabilities.setCapability("appium:appPackage", "ru.netology.testing.uiautomator");
         desiredCapabilities.setCapability("appium:appActivity", "ru.netology.testing.uiautomator.MainActivity");
 
